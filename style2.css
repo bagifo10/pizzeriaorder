@@ -29,7 +29,8 @@ table {
   color: black;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
@@ -42,19 +43,37 @@ th {
 
 button {
   margin: 5px;
-  padding: 5px 10px;
+  padding: 8px 15px;
+  /* More padding */
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 .editar {
   background-color: #ffc107;
+  color: #333;
+}
+
+.editar:hover {
+  background-color: #ffca2c;
 }
 
 .cancelar {
   background-color: #dc3545;
   color: white;
+}
+
+.cancelar:hover {
+  background-color: #bb2d3b;
 }
 
 td input {
