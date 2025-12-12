@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(pizza.jpg);
+    background-size: 100vw, 100vw;
+}
+
+.h1{
+    text-align: center;
+}
+
+.div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333333ac;
+    text-align: center;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.inputs{
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.submit{
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 300px;
+    font-size: 30px;
+}
+
+.indice{
+    font-size: 25px;
+}
