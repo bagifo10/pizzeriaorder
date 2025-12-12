@@ -34,7 +34,12 @@ body {
     background-color: #333333ac;
     text-align: center;
     width: 350px;
-    height: 550px;
+    max-width: 90%;
+    /* Responsive width */
+    height: auto;
+    /* Dynamic height */
+    padding: 40px 20px;
+    /* Internal spacing */
     /* Increased height slightly for spacing */
     border-radius: 15px;
     backdrop-filter: blur(5px);
