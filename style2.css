@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap');
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Outfit', sans-serif;
   background-image: url(pizza.jpg);
   background-size: 100vw, 100vw;
   margin: 0;
@@ -77,16 +79,21 @@ button:hover {
 }
 
 td input {
-  width: 100%;
-  padding: 5px;
-  border: none;
+  width: 90%;
+  padding: 8px;
+  border: 1px solid transparent;
+  border-radius: 6px;
   background-color: transparent;
   font-size: 16px;
   color: black;
   text-align: center;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.2s;
 }
 
 td input:focus {
   outline: none;
-  background-color: #f5f5f5;
+  background-color: #fff;
+  border-color: #ff9900;
+  box-shadow: 0 0 5px rgba(255, 153, 0, 0.3);
 }

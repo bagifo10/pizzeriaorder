@@ -1,14 +1,18 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Outfit', sans-serif;
+    /* Applied new font */
     background-image: url(pizza.jpg);
     background-size: 100vw, 100vw;
 }
 
-.h1{
+.h1 {
     text-align: center;
+    font-weight: 700;
 }
 
-.div{
+.div {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -16,44 +20,61 @@ body{
     background-color: #333333ac;
     text-align: center;
     width: 350px;
-    height: 500px;
+    height: 550px;
+    /* Increased height slightly for spacing */
     border-radius: 15px;
+    backdrop-filter: blur(5px);
+    /* Added blur for premium feel */
 }
 
-.inputs{
-    height: 30px;
-    border-radius: 5px;
+.inputs {
+    height: 40px;
+    /* Taller inputs */
+    border-radius: 8px;
     margin-top: 15px;
-    width: 200px;
+    width: 220px;
     text-align: center;
+    border: 1px solid #ccc;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
-.submit{
+.inputs:focus {
+    outline: none;
+    border-color: #ff9900;
+    box-shadow: 0 0 8px rgba(255, 153, 0, 0.5);
+}
+
+.submit {
     height: 50px;
-    border-radius: 8px; /* Slightly more rounded */
+    border-radius: 8px;
+    /* Slightly more rounded */
     margin-top: 20px;
     width: 300px;
-    font-size: 24px; /* Balanced font size */
+    font-size: 24px;
+    /* Balanced font size */
     font-weight: bold;
     border: none;
-    background: linear-gradient(135deg, #ff9900 0%, #ff6600 100%); /* Orange gradient */
+    background: linear-gradient(135deg, #ff9900 0%, #ff6600 100%);
+    /* Orange gradient */
     color: white;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
 }
 
 .submit:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
     filter: brightness(1.1);
 }
 
 .submit:active {
     transform: translateY(1px);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.indice{
+.indice {
     font-size: 25px;
 }
